@@ -1,0 +1,58 @@
+      </section>
+            </div>
+            
+
+            <div class="pane pane2">
+
+                <nav class="content infoBlock">
+                    <h5 class="blockHeading"><span aria-hidden="true" data-icon="&#xe00c;">Places</h5>
+                    <ul>
+                        <li>
+                            <a href="{{ url:site }}">
+                                {{ theme:image file="navIcons/portfolio-icon.png" }}
+                                
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url:site }}/blog/">
+                                {{ theme:image file="navIcons/blog-icon.png" }}
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url:site }}/blog/category/comics/" >
+                                {{ theme:image file="navIcons/comics-icon.png" }}
+                                <span>Comics</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+
+            
+    
+                <aside id="newsfeed" data-user="sanstreamed" class="myActivity nonContent infoBlock">
+
+                    <h5 class="blockHeading"><span aria-hidden="true" data-icon="&#xe005;">Activity</h5>
+                    <a class="profileLink" target="_blank" href="" title="Follow me on twitter">
+                        <span aria-hidden="true" data-icon="&#xe009;">
+                        <span class="linkText"></span>
+                    </a>
+                   
+                    <ul class="tweets"></ul>
+                </aside>
+
+                <footer class="nonContent infoBlock colofon">
+                    {{ widgets:area slug="colofon" }}
+                </footer>
+               
+            </div>
+
+        </div>        
+
+	<!-- Google Analytics -->
+	{{ integration:analytics }}
+	  
+</body>
+</html>
