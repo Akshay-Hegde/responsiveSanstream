@@ -64,10 +64,10 @@ var Infoblocks = {
 
 		// correcting the calculation for the body size:
 		this.bodySize = window.getSize();
-		this.bodyElement.setStyles({
-			height: this.bodySize.y,
-			width: this.bodySize.x
-		});
+		// this.bodyElement.setStyles({
+		// 	height: this.bodySize.y,
+		// 	width: this.bodySize.x
+		// });
 
 		// getting the available space for the infoblocks:
 		this.siteframeSpace = this.siteframeElement.getDimensions();
