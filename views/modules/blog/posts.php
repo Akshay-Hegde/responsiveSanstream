@@ -40,7 +40,7 @@
 					</span>
 				</p>
 			</div>
-
+            
 
 		</article>
 

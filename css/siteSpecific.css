@@ -8,6 +8,8 @@
   src:  url('../fonts/League Gothic.otf');
 }
 
+
+
 h1,h2,h3,h4,h5{
     font-family:'League Gothic';
     font-weight: 400;
@@ -76,44 +78,18 @@ body{
 
 p{
     line-height: 1.2em;
+    min-width: 0.8em;
 }
 
 .siteFrame {
-    margin: 0 2%;
-    padding: 50px 2% 0;
+    background-color: rgba(255,255,255,0.7);
+    margin: 1% 2%;
+    padding: 50px 2% 20px;
     position: relative;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
-
-/*.portrait .siteFrame{
-    bottom: 2%;
-    height: 95%;
-}
-*/
-.siteFrame:before{
-    background-color: #FFFFFF;
-    box-shadow: 0 0 3px #FFFFFF;
-    content: "";
-    display: block;
-    height: 100%;
-    margin: -50px 0 0;
-    opacity: 0.7;
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
-/*
-.portrait .siteFrame:before{
-    bottom: 1%;
-    height: 96%;
-}
-.landscape .siteFrame:before{
-    height: 91%;
-    bottom: 2%;
-}*/
 
 .infoBlock,
 .pane{
@@ -135,56 +111,46 @@ p{
     /*height: 100%;*/
 }
 
-.landscape .pane1{
-    width: 22%;
+#extended-bio {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
-.landscape .pane2{
-    width: 22%;
+#extended-bio.shown{
+    height: auto;
+    opacity: 1;
 }
 
-.landscape .contentBox{
-    width: 55%;
+@media only screen and (min-width: 65em) {
+
+    .pane{
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .pane1{
+    width: 22%;
+    }
+
+    .pane2{
+        width: 22%;
+    }
+
+    .contentBox{
+        width: 55%;
+    }
+
 }
+
 
 /* portrait specific styling */
 
-.portrait .pane{
-    display: block;
-}
 
-.portrait .pane1{
-    height: 22%;
-}
-
-.portrait .pane2{
-    height: 15%;
-}
-
-.portrait .contentBox{
-    height: 62%;
-    
-}
-
-.portrait .pane1 .infoBlock,
-.portrait .pane2  .infoBlock{
-    display: inline-block;
-    vertical-align: top;
-    /*height: 100%;*/
-}
-
-/*.pane2{
-    border: 1px dashed red;
-}
-.pane1{
-    border: 1px dashed purple;
-}
-.contentBox{
-    border: 1px dashed cyan;
-}
-*/
 header{
     margin-bottom: 2%;
+    font-family: Arial;
 }
 
 header h2{
@@ -196,32 +162,17 @@ header img.pictureOfMe{
     margin: 10px;
 }
 
-.portrait header{
-    width: auto;
-}
-.portrait header div{
-    -moz-column-count:2; /* Firefox */
-    -webkit-column-count:2; /* Safari and Chrome */
-    column-count:2;
+header p{
     font-size: 0.8em;
 }
 
-.portrait aside.Contact{
-   width: 27%;
-   margin-left: 1%; 
-}
-
-.landscape aside.Contact{
-    /*height: 38%;*/
-}
-
 section.content{
-    /*height: 100%; */
+    
     width: auto; 
-    overflow-y: scroll;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+    letter-spacing: 0.1em;
 }
 
 section.content h1,
@@ -277,15 +228,17 @@ section.page-chunk{
 
 .nonContent{
     background-color: #444;
-    border: 2px solid #222;
+    /*border: 2px solid #222;*/
     overflow: hidden;
     color: #eee;
+    margin-bottom: 3px;
 }
 
 .content{
     background-color: #fefefe;
-    border: 2px solid #666;  
+    /*border: 2px solid #666;  */
     color: #555; 
+    margin-bottom: 3px;
 }
 
 /** block specific styling **/
@@ -326,11 +279,6 @@ nav li a img{
     margin-bottom: 1%;
 }
 
-
-.portrait .myActivity{
-    width: 42%;
-}
-
 .portrait .myActivity h5{
     display: none;
 }
@@ -341,7 +289,6 @@ nav li a img{
 }
 
 .portrait footer{
-    width: 16%;
     display: block;
 }
 
@@ -370,10 +317,6 @@ nav li a img{
 footer{
      font-size: 0.8em;
     line-height: 1em;
-}
-
-.landscape footer{
-    max-height: 14%;
 }
 
 
