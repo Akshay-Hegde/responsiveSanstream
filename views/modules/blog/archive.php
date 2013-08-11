@@ -4,7 +4,7 @@
 
 
 		<article class="post">
-			<h2><?php echo anchor('blog/' .date('Y/m', $post->created_on) .'/'. $post->slug, $post->title); ?></h2>
+			<h2><?php echo  $post->title; ?></h2>
 		
 
 
@@ -40,7 +40,7 @@
 					</span>
 				</p>
 			</div>
-
+			<?php echo anchor('blog/' .date('Y/m', $post->created_on) .'/'. $post->slug, $post->title); ?>
 
 		</article>
 

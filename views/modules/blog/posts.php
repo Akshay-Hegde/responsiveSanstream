@@ -4,16 +4,11 @@
 
 
 		<article class="post">
-			<h2><?php echo anchor('blog/' .date('Y/m', $post->created_on) .'/'. $post->slug, $post->title); ?></h2>
+			<h2><?php echo  $post->title; ?></h2>
 		
 
-
-			<div class="post_intro">
-				<?php echo $post->intro; ?>
-			</div>
 			
-			<div class="post_category">
-				<p>
+				<p class="post_category">
 					This was published
 					<?php if($post->category_slug) : ?>
 						
@@ -39,7 +34,10 @@
 
 					</span>
 				</p>
-			</div>
+			<p class="post_intro">
+				<?php echo $post->intro; ?>
+			</p>
+			<?php echo anchor('blog/' .date('Y/m', $post->created_on) .'/'. $post->slug, "Read more..."); ?>
             
 
 		</article>
