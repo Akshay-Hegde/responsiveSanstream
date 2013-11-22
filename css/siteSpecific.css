@@ -398,6 +398,14 @@ article.post .post_intro {
 
 /*****************************************************/
 
+article.single_post pre{
+    margin: 1em 1em 1.5em 1em;
+    padding: 1em;
+    border: 1px dotted #B3C1CE;
+    background-color: #E8F2FC;
+    font-size: 0.9em;
+}
+
 article.single_post img.pyro-image.alignment-none{
     max-width: 100%;
 }
@@ -421,4 +429,18 @@ article.single_post img.pyro-image.alignment-none{
     box-sizing: -moz-box-sizing;
     box-sizing: box-sizing;
     box-sizing: -webkit-box-sizing;
+}
+/*****************************************************/
+/* twitter feed */
+
+#newsfeed .twitter_feed ul.rss{
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+#newsfeed .twitter_feed ul.rss p.date{
+    margin: 0.5em 0 1em 0;
+    font-size: 0.8em;
 }
