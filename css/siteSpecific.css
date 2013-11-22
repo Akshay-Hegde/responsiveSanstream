@@ -54,11 +54,11 @@ a:hover{
 }
 
 .nonContent a{
-    color: #f55;
+    color: #FF634F;
 }
 
 .content a{
-    color: #f44; /*#E5790A;*/
+    color: #FF1E00;
 }
 
 /* paragraphs and bodies of text */
@@ -256,17 +256,31 @@ section.page-chunk{
 
 .nonContent{
     background-color: #444;
-    /*border: 2px solid #222;*/
     overflow: hidden;
     color: #eee;
     margin-bottom: 3px;
+    border-left: 4px solid #FF7A00;
 }
 
 .content{
     background-color: #fefefe;
     color: #555; 
     margin-bottom: 3px;
+    border-left: 3px solid #FF7A00;
+    border-top: 1px solid #444;
+    position: relative;
 }
+
+.content:before{
+    height: 100%;
+    position: absolute;
+    display: block;
+    content: '';
+    border-left: 3px solid #FFE100;
+    top: 0;
+    left: 0;
+}
+
 
 /** block specific styling **/
 
@@ -283,12 +297,13 @@ nav li{
 }
 
 nav a{
-    border-bottom: 2px solid  #30BFBF;
+    border-bottom: 2px solid #00B8E3;
     color: #000 !important;
     font-size: 1em;
     margin: 2px;
     width: 80px;
     text-align: center;
+    text-decoration: none;
 }
 
 nav li a,
