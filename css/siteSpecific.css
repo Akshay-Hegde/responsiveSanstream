@@ -10,7 +10,8 @@
 
 
 
-h1,h2,h3,h4,h5{
+h1,
+h2{
     font-family:'League Gothic';
     font-weight: 400;
     letter-spacing: 0.04em;
@@ -22,7 +23,7 @@ h1 {
 }
 
 h2{
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0.20em 0 0.50em 0;
     letter-spacing: 0.02em;
 }
@@ -34,12 +35,12 @@ h5.blockHeading {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0.2em 0 0.5em 0;
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.1em;
     margin: 0.2em 0 0.5em 0;
 }
 
@@ -169,10 +170,8 @@ section.content{
     box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-section.content h1,
-section.content h2,
-section.content h3{
-    border-bottom: 1px solid #000;
+section.content h2{
+    border-bottom: 1px solid #999;
 }
 
 section.page-chunk{
@@ -413,7 +412,7 @@ article.post .post_intro {
 
 /*****************************************************/
 
-article.single_post pre{
+article pre{
     margin: 1em 1em 1.5em 1em;
     padding: 1em;
     border: 1px dotted #B3C1CE;
